@@ -26,7 +26,7 @@
             "lang": {
                 "@id": "@language"
             },
-            "subClassOf": {
+            "subclass_of": {
                 "@id": "rdfs:subClassOf",
                 "@type": "@id"
             },
@@ -93,7 +93,7 @@
         },
         "metaclass": {
             "default": [
-                "Category:OSW9deb690d6ebb4eaaa1ca5a24c2f32cad"
+                "Category:OSW57beed5e1294434ba77bb6516e461456"
             ]
         },
         "subclass_of": {
