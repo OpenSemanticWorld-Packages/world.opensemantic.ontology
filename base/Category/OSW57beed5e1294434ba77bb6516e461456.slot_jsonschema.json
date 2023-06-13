@@ -82,13 +82,33 @@
         "en": "Term with in the EMMO ontology"
     },
     "required": [
-        "type"
+        "type",
+        "metaclass"
     ],
     "properties": {
         "type": {
             "default": [
                 "Category:OSW57beed5e1294434ba77bb6516e461456"
             ]
+        },
+        "metaclass": {
+            "default": [
+                "Category:OSW9deb690d6ebb4eaaa1ca5a24c2f32cad"
+            ]
+        },
+        "subclass_of": {
+            "type": "array",
+            "title": "Superclass",
+            "items": {
+                "type": "string",
+                "title": "Superclass",
+                "format": "autocomplete",
+                "options": {
+                    "autocomplete": {
+                        "query": "[[HasType::Category:OSW9deb690d6ebb4eaaa1ca5a24c2f32cad]][[Display_title_of::like:*{{{_user_input}}}*]]|?Display_title_of=label|?Equivalent_URI=uri|?HasDescription=description|limit=1000"
+                    }
+                }
+            }
         },
         "uri": {
             "type": "string",
@@ -113,13 +133,6 @@
             "title": "Elucidation / Explanation",
             "items": {
                 "$ref": "/wiki/JsonSchema:MultiLangProperty?action=raw"
-            }
-        },
-        "subClassOf": {
-            "type": "array",
-            "title": "Superclass",
-            "items": {
-                "$ref": "/wiki/JsonSchema:UuidUriProperty?action=raw"
             }
         }
     }

@@ -11,7 +11,7 @@
             "globalID": "world.opensemantic.ontology",
             "label": "OSW Ontology",
             "description": "Provides schemas for ontology terms",
-            "version": "0.1.0",
+            "version": "0.2.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.ontology/main/base/",
             "pages": [
                 {

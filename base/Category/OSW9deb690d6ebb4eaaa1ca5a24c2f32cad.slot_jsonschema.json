@@ -90,10 +90,16 @@
         "en": "Meta class for the Open Energy Ontology"
     },
     "required": [
-        "type"
+        "type",
+        "metaclass"
     ],
     "properties": {
         "type": {
+            "default": [
+                "Category:OSW9deb690d6ebb4eaaa1ca5a24c2f32cad"
+            ]
+        },
+        "metaclass": {
             "default": [
                 "Category:OSW9deb690d6ebb4eaaa1ca5a24c2f32cad"
             ]
@@ -111,7 +117,7 @@
                 "format": "autocomplete",
                 "options": {
                     "autocomplete": {
-                        "category": "Category:OSW9deb690d6ebb4eaaa1ca5a24c2f32cad"
+                        "query": "[[HasType::Category:OSW9deb690d6ebb4eaaa1ca5a24c2f32cad]][[Display_title_of::like:*{{{_user_input}}}*]]|?Display_title_of=label|?Equivalent_URI=uri|?HasDescription=description|limit=1000"
                     }
                 }
             }
@@ -122,7 +128,7 @@
             "format": "autocomplete",
             "options": {
                 "autocomplete": {
-                    "category": "Category:OSW9deb690d6ebb4eaaa1ca5a24c2f32cad"
+                    "query": "[[HasType::Category:OSW9deb690d6ebb4eaaa1ca5a24c2f32cad]][[Display_title_of::like:*{{{_user_input}}}*]]|?Display_title_of=label|?Equivalent_URI=uri|?HasDescription=description|limit=1000"
                 }
             }
         },
@@ -132,7 +138,7 @@
             "format": "autocomplete",
             "options": {
                 "autocomplete": {
-                    "category": "Category:OSW9deb690d6ebb4eaaa1ca5a24c2f32cad"
+                    "query": "[[HasType::Category:OSW9deb690d6ebb4eaaa1ca5a24c2f32cad]][[Display_title_of::like:*{{{_user_input}}}*]]|?Display_title_of=label|?Equivalent_URI=uri|?HasDescription=description|limit=1000"
                 }
             }
         }
