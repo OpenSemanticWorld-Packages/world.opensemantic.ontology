@@ -1,0 +1,22 @@
+{
+    "type": [
+        "Category:Category"
+    ],
+    "subclass_of": [
+        "Category:Category"
+    ],
+    "uuid": "9deb690d-6ebb-4eaa-a1ca-5a24c2f32cad",
+    "label": [
+        {
+            "text": "OeoTerm",
+            "lang": "en"
+        }
+    ],
+    "description": [
+        {
+            "text": "Meta class for the Open Energy Ontology",
+            "lang": "en"
+        }
+    ],
+    "name": "OeoTerm"
+}

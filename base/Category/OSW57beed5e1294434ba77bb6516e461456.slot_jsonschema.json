@@ -1,0 +1,126 @@
+{
+    "@context": [
+        "/wiki/Category:OSWa5812d3b5119416c8da1606cbe7054eb?action=raw&slot=jsonschema",
+        {
+            "owl": "http://www.w3.org/2002/07/owl#",
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "skos": "http://www.w3.org/2004/02/skos/core#",
+            "dc": "http://purl.org/dc/terms/",
+            "uri": {
+                "@id": "@id"
+            },
+            "rdf_type": {
+                "@id": "@type"
+            },
+            "label": {
+                "@id": "skos:prefLabel"
+            },
+            "altLabel": {
+                "@id": "skos:altLabel"
+            },
+            "text": {
+                "@id": "@value"
+            },
+            "lang": {
+                "@id": "@language"
+            },
+            "subClassOf": {
+                "@id": "rdfs:subClassOf",
+                "@type": "@id"
+            },
+            "source": "dc:source",
+            "disjointUnionOf": "owl:disjointUnionOf",
+            "disjointWith": "owl:disjointWith",
+            "equivalentClass": "owl:equivalentClass",
+            "unionOf": {
+                "@id": "owl:unionOf",
+                "@container": "@list",
+                "@type": "@id"
+            },
+            "comment": "rdfs:comment",
+            "isDefinedBy": "rdfs:isDefinedBy",
+            "seeAlso": "rdfs:seeAlso",
+            "qudtReference": "http://emmo.info/emmo#EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc",
+            "omReference": "http://emmo.info/emmo#EMMO_209ba1b3_149f_4ff0_b672_941610eafd72",
+            "wikidataReference": "http://emmo.info/emmo#EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54",
+            "ISO9000Reference": "http://emmo.info/emmo#EMMO_3aa37f92_8dc5_4ee4_8438_e41e6ae20c62",
+            "IEVReference": "http://emmo.info/emmo#EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f",
+            "dbpediaReference": "http://emmo.info/emmo#EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25",
+            "etymology": "http://emmo.info/emmo#EMMO_705f27ae_954c_4f13_98aa_18473fc52b25",
+            "definition": "http://emmo.info/emmo#EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84",
+            "ISO80000Reference": "http://emmo.info/emmo#EMMO_8de5d5bf_db1c_40ac_b698_095ba3b18578",
+            "ISO14040Reference": "http://emmo.info/emmo#EMMO_964568dd_64d2_454b_a12f_ac389f1c5e7f",
+            "elucidation": "http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",
+            "example": "http://emmo.info/emmo#EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a",
+            "VIMTerm": "http://emmo.info/emmo#EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6",
+            "emmo_comment": "http://emmo.info/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f",
+            "wikipediaReference": "http://emmo.info/emmo#EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d",
+            "iupacReference": "http://emmo.info/emmo#EMMO_fe015383_afb3_44a6_ae86_043628697aa2",
+            "comment*": "Property:HasComment",
+            "uri*": "Property:Equivalent_URI",
+            "subClassOf*": {
+                "@id": "Property:SubClassOf",
+                "@type": "@id"
+            }
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWa5812d3b5119416c8da1606cbe7054eb?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "57beed5e-1294-434b-a77b-b6516e461456",
+    "title": "EmmoTerm",
+    "title*": {
+        "en": "EmmoTerm"
+    },
+    "description": "Term with in the EMMO ontology",
+    "description*": {
+        "en": "Term with in the EMMO ontology"
+    },
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW57beed5e1294434ba77bb6516e461456"
+            ]
+        },
+        "uri": {
+            "type": "string",
+            "title": "URI"
+        },
+        "altLabel": {
+            "type": "array",
+            "title": "Alternative label",
+            "items": {
+                "$ref": "/wiki/JsonSchema:MultiLangProperty?action=raw"
+            }
+        },
+        "comment": {
+            "type": "array",
+            "title": "Comment",
+            "items": {
+                "$ref": "/wiki/JsonSchema:MultiLangProperty?action=raw"
+            }
+        },
+        "elucidation": {
+            "type": "array",
+            "title": "Elucidation / Explanation",
+            "items": {
+                "$ref": "/wiki/JsonSchema:MultiLangProperty?action=raw"
+            }
+        },
+        "subClassOf": {
+            "type": "array",
+            "title": "Superclass",
+            "items": {
+                "$ref": "/wiki/JsonSchema:UuidUriProperty?action=raw"
+            }
+        }
+    }
+}

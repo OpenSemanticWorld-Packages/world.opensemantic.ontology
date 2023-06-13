@@ -1,0 +1,63 @@
+{
+    "publisher": "OpenSemanticWorld",
+    "publisherURL": "https://github.com/OpenSemanticWorld-Packages/world.opensemantic.ontology",
+    "author": [
+        "Simon Stier"
+    ],
+    "language": "en",
+    "licenseName": "CC BY-NC 4.0",
+    "packages": {
+        "OSW Ontology": {
+            "globalID": "world.opensemantic.ontology",
+            "label": "OSW Ontology",
+            "description": "Provides schemas for ontology terms",
+            "version": "0.1.0",
+            "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.ontology/main/base/",
+            "pages": [
+                {
+                    "name": "OSW57beed5e1294434ba77bb6516e461456",
+                    "label": "EmmoTerm",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW57beed5e1294434ba77bb6516e461456.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW57beed5e1294434ba77bb6516e461456.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSW57beed5e1294434ba77bb6516e461456.slot_footer_template.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW57beed5e1294434ba77bb6516e461456.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW57beed5e1294434ba77bb6516e461456.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW57beed5e1294434ba77bb6516e461456.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW9deb690d6ebb4eaaa1ca5a24c2f32cad",
+                    "label": "OeoTerm",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW9deb690d6ebb4eaaa1ca5a24c2f32cad.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW9deb690d6ebb4eaaa1ca5a24c2f32cad.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW9deb690d6ebb4eaaa1ca5a24c2f32cad.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW9deb690d6ebb4eaaa1ca5a24c2f32cad.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW9deb690d6ebb4eaaa1ca5a24c2f32cad.slot_jsonschema.json"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
