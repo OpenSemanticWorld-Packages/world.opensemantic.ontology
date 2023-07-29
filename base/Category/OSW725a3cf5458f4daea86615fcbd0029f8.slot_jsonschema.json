@@ -1,0 +1,163 @@
+{
+    "@context": [
+        "/wiki/Category:Category?action=raw&slot=jsonschema",
+        {
+            "owl": "http://www.w3.org/2002/07/owl#",
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "iri": {
+                "@id": "@id"
+            },
+            "label": {
+                "@id": "rdfs:label"
+            },
+            "altLabel": {
+                "@id": "skos:altLabel"
+            },
+            "text": {
+                "@id": "@value"
+            },
+            "lang": {
+                "@id": "@language"
+            },
+            "disjointUnionOf": "owl:disjointUnionOf",
+            "disjointWith": "owl:disjointWith",
+            "equivalentClass": "owl:equivalentClass",
+            "unionOf": {
+                "@id": "owl:unionOf",
+                "@container": "@list",
+                "@type": "@id"
+            },
+            "comment": "rdfs:comment",
+            "isDefinedBy": "rdfs:isDefinedBy",
+            "seeAlso": "rdfs:seeAlso",
+            "on_property": {
+                "@id": "owl:onProperty",
+                "@type": "@id"
+            },
+            "some_values_from": {
+                "@id": "owl:someValuesFrom",
+                "@type": "@id"
+            },
+            "domain": {
+                "@id": "rdfs:domain",
+                "@type": "@id"
+            },
+            "range": {
+                "@id": "rdfs:range",
+                "@type": "@id"
+            },
+            "subproperty_of": {
+                "@id": "rdfs:subPropertyOf",
+                "@type": "@id"
+            },
+            "imported_from*": "Property:Imported_from",
+            "restrictions": "rdfs:subClassOf",
+            "restrictions*": "Property:HasRestriction",
+            "on_property*": "Property:HasProperty",
+            "all_values_from": "owl:allValuesFrom",
+            "all_values_from*": "Property:HasObject",
+            "some_values_from*": "Property:HasObject",
+            "has_value": "owl:hasValue",
+            "has_value*": "Property:HasValue",
+            "max_cardinality": "owl:maxCardinality",
+            "min_cardinality": "owl:minCardinality",
+            "cardinality": "owl:cardinality"
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:Category?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "725a3cf5-458f-4dae-a866-15fcbd0029f8",
+    "$id": "https://opensemantic.world/OSW725a3cf5458f4daea86615fcbd0029f8/0.1.0",
+    "title": "OwlClass",
+    "title*": {
+        "en": "OWL Class"
+    },
+    "description": "",
+    "description*": {},
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW725a3cf5458f4daea86615fcbd0029f8"
+            ]
+        },
+        "imported_from": {
+            "type": "string",
+            "description": "A prefixed IRI defining this entry as a imported term. In OSW the prefix must be a registered imported ontology.",
+            "title": "Imported from",
+            "example": "schema:Person"
+        },
+        "restrictions": {
+            "title": "Relations",
+            "description": "Relations of this class to other classes, instances or literals (OWL Restrictions)",
+            "type": "array",
+            "eval_template": [
+                {
+                    "type": "mustache-wikitext",
+                    "mode": "render",
+                    "value": "{{#restrictions}}[[{{{on_property}}}]] [[:{{{some_values_from}}}{{{all_values_from}}}]]<br>{{/restrictions}}"
+                }
+            ],
+            "items": {
+                "type": "object",
+                "title": "Relation",
+                "required": [
+                    "rdf_type",
+                    "on_property"
+                ],
+                "properties": {
+                    "rdf_type": {
+                        "type": "string",
+                        "default": "owl:Restriction",
+                        "options": {
+                            "hidden": true
+                        }
+                    },
+                    "on_property": {
+                        "type": "string",
+                        "title": "Property",
+                        "description": "Property to use in this relation"
+                    },
+                    "some_values_from": {
+                        "type": "string",
+                        "title": "Value (Class)",
+                        "description": "Another class which is the value of this relation. Other classes for the same property are allowed."
+                    },
+                    "all_values_from": {
+                        "type": "string",
+                        "title": "Value (Class, strict)",
+                        "description": "Another class which is the value of this relation. No other classes for the same property are allowed."
+                    },
+                    "has_value": {
+                        "type": "string",
+                        "title": "Value (Instance)",
+                        "description": "An instance which is the value of this relation"
+                    },
+                    "min_cardinality": {
+                        "type": "integer",
+                        "title": "Min count (Cardinality)",
+                        "description": "Minimal allowed number of relations"
+                    },
+                    "max_cardinality": {
+                        "type": "integer",
+                        "title": "Max count (Cardinality)",
+                        "description": "Maximal allowed number of relations"
+                    },
+                    "cardinality": {
+                        "type": "integer",
+                        "title": "Count (Cardinality)",
+                        "description": "Exact allowed number of relations"
+                    }
+                }
+            }
+        }
+    }
+}

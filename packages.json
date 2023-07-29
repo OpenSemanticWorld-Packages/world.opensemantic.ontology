@@ -11,9 +11,29 @@
             "globalID": "world.opensemantic.ontology",
             "label": "OSW Ontology",
             "description": "Provides schemas for ontology terms",
-            "version": "0.2.1",
+            "version": "0.3.0",
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.ontology/main/base/",
             "pages": [
+                {
+                    "name": "OSW725a3cf5458f4daea86615fcbd0029f8",
+                    "label": "OwlClass",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW725a3cf5458f4daea86615fcbd0029f8.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW725a3cf5458f4daea86615fcbd0029f8.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW725a3cf5458f4daea86615fcbd0029f8.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW725a3cf5458f4daea86615fcbd0029f8.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW725a3cf5458f4daea86615fcbd0029f8.slot_jsonschema.json"
+                        }
+                    }
+                },
                 {
                     "name": "OSW57beed5e1294434ba77bb6516e461456",
                     "label": "EmmoTerm",
