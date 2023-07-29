@@ -1,0 +1,22 @@
+{
+    "type": [
+        "Category:Category"
+    ],
+    "subclass_of": [
+        "Category:Item"
+    ],
+    "uuid": "6b9ef278-4a93-4b8a-b965-23366e23e906",
+    "label": [
+        {
+            "text": "Owl Individual",
+            "lang": "en"
+        }
+    ],
+    "description": [
+        {
+            "text": "A (named) individual which is instance of an OwlClass",
+            "lang": "en"
+        }
+    ],
+    "name": "OwlIndividual"
+}

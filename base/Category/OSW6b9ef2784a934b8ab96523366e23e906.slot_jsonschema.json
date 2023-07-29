@@ -1,0 +1,39 @@
+{
+    "@context": [
+        "/wiki/Category:Item?action=raw&slot=jsonschema",
+        {
+            "iri*": "Property:Equivalent_URI"
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "6b9ef278-4a93-4b8a-b965-23366e23e906",
+    "title": "OwlIndividual",
+    "title*": {
+        "en": "Owl Individual"
+    },
+    "description": "A (named) individual which is instance of an OwlClass",
+    "description*": {
+        "en": "A (named) individual which is instance of an OwlClass"
+    },
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW6b9ef2784a934b8ab96523366e23e906"
+            ]
+        },
+        "imported_from": {
+            "type": "string",
+            "description": "A prefixed IRI defining this entry as a imported term. In OSW the prefix must be a registered imported ontology.",
+            "title": "Imported from",
+            "example": "schema:Person"
+        }
+    }
+}
