@@ -3,13 +3,13 @@
         "Category:Category"
     ],
     "subclass_of": [
-        "Category:Category"
+        "Category:OSW725a3cf5458f4daea86615fcbd0029f8"
     ],
     "uuid": "57beed5e-1294-434b-a77b-b6516e461456",
-    "name": "EmmoTerm",
+    "name": "EmmoClass",
     "label": [
         {
-            "text": "EmmoTerm",
+            "text": "EmmoClass",
             "lang": "en"
         }
     ],
@@ -18,5 +18,8 @@
             "text": "Term with in the EMMO ontology",
             "lang": "en"
         }
+    ],
+    "metaclass": [
+        "Category:OSW57beed5e1294434ba77bb6516e461456"
     ]
 }

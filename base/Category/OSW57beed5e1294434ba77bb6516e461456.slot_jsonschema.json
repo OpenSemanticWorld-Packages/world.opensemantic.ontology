@@ -1,47 +1,16 @@
 {
     "@context": [
-        "/wiki/Category:OSWa5812d3b5119416c8da1606cbe7054eb?action=raw&slot=jsonschema",
+        "/wiki/Category:OSW725a3cf5458f4daea86615fcbd0029f8?action=raw&slot=jsonschema",
         {
-            "owl": "http://www.w3.org/2002/07/owl#",
-            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
             "skos": "http://www.w3.org/2004/02/skos/core#",
             "dc": "http://purl.org/dc/terms/",
-            "uri": {
-                "@id": "@id"
-            },
-            "rdf_type": {
-                "@id": "@type"
-            },
             "label": {
                 "@id": "skos:prefLabel"
             },
             "altLabel": {
                 "@id": "skos:altLabel"
             },
-            "text": {
-                "@id": "@value"
-            },
-            "lang": {
-                "@id": "@language"
-            },
-            "subclass_of": {
-                "@id": "rdfs:subClassOf",
-                "@type": "@id"
-            },
             "source": "dc:source",
-            "disjointUnionOf": "owl:disjointUnionOf",
-            "disjointWith": "owl:disjointWith",
-            "equivalentClass": "owl:equivalentClass",
-            "unionOf": {
-                "@id": "owl:unionOf",
-                "@container": "@list",
-                "@type": "@id"
-            },
-            "comment": "rdfs:comment",
-            "isDefinedBy": "rdfs:isDefinedBy",
-            "seeAlso": "rdfs:seeAlso",
             "qudtReference": "http://emmo.info/emmo#EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc",
             "omReference": "http://emmo.info/emmo#EMMO_209ba1b3_149f_4ff0_b672_941610eafd72",
             "wikidataReference": "http://emmo.info/emmo#EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54",
@@ -58,24 +27,19 @@
             "emmo_comment": "http://emmo.info/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f",
             "wikipediaReference": "http://emmo.info/emmo#EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d",
             "iupacReference": "http://emmo.info/emmo#EMMO_fe015383_afb3_44a6_ae86_043628697aa2",
-            "comment*": "Property:HasComment",
-            "uri*": "Property:Equivalent_URI",
-            "subClassOf*": {
-                "@id": "Property:SubClassOf",
-                "@type": "@id"
-            }
+            "comment*": "Property:HasComment"
         }
     ],
     "allOf": [
         {
-            "$ref": "/wiki/Category:OSWa5812d3b5119416c8da1606cbe7054eb?action=raw&slot=jsonschema"
+            "$ref": "/wiki/Category:OSW725a3cf5458f4daea86615fcbd0029f8?action=raw&slot=jsonschema"
         }
     ],
     "type": "object",
     "uuid": "57beed5e-1294-434b-a77b-b6516e461456",
-    "title": "EmmoTerm",
+    "title": "EmmoClass",
     "title*": {
-        "en": "EmmoTerm"
+        "en": "EmmoClass"
     },
     "description": "Term with in the EMMO ontology",
     "description*": {
@@ -109,10 +73,6 @@
                     }
                 }
             }
-        },
-        "uri": {
-            "type": "string",
-            "title": "URI"
         },
         "altLabel": {
             "type": "array",
