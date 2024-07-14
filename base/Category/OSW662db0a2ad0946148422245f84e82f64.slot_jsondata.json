@@ -1,0 +1,23 @@
+{
+    "type": [
+        "Category:Category"
+    ],
+    "subclass_of": [
+        "Category:OSW288260cd0728420c9f40ae1c5fa19111"
+    ],
+    "uuid": "662db0a2-ad09-4614-8422-245f84e82f64",
+    "name": "OwlOntology",
+    "iri": "owl:Ontolgy",
+    "label": [
+        {
+            "text": "OWL Ontology",
+            "lang": "en"
+        }
+    ],
+    "description": [
+        {
+            "text": "see https://www.w3.org/TR/owl-ref/#Ontology-def",
+            "lang": "en"
+        }
+    ]
+}

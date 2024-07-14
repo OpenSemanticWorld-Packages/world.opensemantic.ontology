@@ -1,0 +1,31 @@
+{
+    "@context": [
+        {
+            "url": "Property:HasUrl"
+        }
+    ],
+    "properties": {
+        "NameOfMostBasicConcept": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        },
+        "type": {
+            "default": [
+                "Category:OSW288260cd0728420c9f40ae1c5fa19111"
+            ]
+        }
+    },
+    "title": "Ontology",
+    "type": "object",
+    "allOf": [
+        {
+            "type": "object",
+            "$ref": "/wiki/Category:Item?action=raw&slot=jsonschema"
+        }
+    ],
+    "required": [
+        "type"
+    ]
+}

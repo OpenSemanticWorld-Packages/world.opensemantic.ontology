@@ -1,0 +1,30 @@
+{
+    "subclass_of": [
+        "Category:Item"
+    ],
+    "uuid": "288260cd-0728-420c-9f40-ae1c5fa19111",
+    "label": [
+        {
+            "text": "Ontology",
+            "lang": "en"
+        },
+        {
+            "text": "Ontology",
+            "lang": "en"
+        },
+        {
+            "text": "Ontologie",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "System von Informationen mit logischen Relationen",
+            "lang": "en"
+        }
+    ],
+    "name": "Ontology",
+    "type": [
+        "Category:Category"
+    ]
+}

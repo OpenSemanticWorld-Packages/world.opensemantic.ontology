@@ -1,0 +1,14 @@
+ [{{SERVER}}{{SCRIPTPATH}}/api.php?action=rdfexport-owl&format=json&rdf_format=turtle&title={{FULLPAGENAME}} Export ontology as RDF]
+
+<div class="pagebot-button" data-config='{ "label": "Create Class", "reload": false, "params": {"categories": ["Category:OSW725a3cf5458f4daea86615fcbd0029f8"], "jsondata": {"ontologies": ["{{FULLPAGENAME}}"]}} }'></div>
+
+
+{{#tree: minExpandLevel=10 |
+{{#ask:
+ [[:Category:OSW379d5a1589c74c82bc0de47938264d00]] OR [[IsPartOf::{{FULLPAGENAME}}]]
+ |format=tree
+ |parent=SubClassOf
+ |template=Viewer/LinkAndEditButton
+ |link=none
+}}
+}}

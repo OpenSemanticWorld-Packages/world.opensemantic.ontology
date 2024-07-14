@@ -11,7 +11,10 @@
             "globalID": "world.opensemantic.ontology",
             "label": "OSW Ontology",
             "description": "Provides schemas for ontology terms",
-            "version": "0.5.0",
+            "version": "0.6.0",
+            "requiredPackages": [
+                "world.opensemantic.core"
+            ],
             "baseURL": "https://raw.githubusercontent.com/OpenSemanticWorld-Packages/world.opensemantic.ontology/main/base/",
             "pages": [
                 {
@@ -71,6 +74,49 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSW6b9ef2784a934b8ab96523366e23e906.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW288260cd0728420c9f40ae1c5fa19111",
+                    "label": "Ontology",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW288260cd0728420c9f40ae1c5fa19111.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW288260cd0728420c9f40ae1c5fa19111.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW288260cd0728420c9f40ae1c5fa19111.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW288260cd0728420c9f40ae1c5fa19111.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW288260cd0728420c9f40ae1c5fa19111.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW662db0a2ad0946148422245f84e82f64",
+                    "label": "OwlOntology",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW662db0a2ad0946148422245f84e82f64.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW662db0a2ad0946148422245f84e82f64.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSW662db0a2ad0946148422245f84e82f64.slot_footer_template.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW662db0a2ad0946148422245f84e82f64.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW662db0a2ad0946148422245f84e82f64.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW662db0a2ad0946148422245f84e82f64.slot_jsonschema.json"
                         }
                     }
                 },
