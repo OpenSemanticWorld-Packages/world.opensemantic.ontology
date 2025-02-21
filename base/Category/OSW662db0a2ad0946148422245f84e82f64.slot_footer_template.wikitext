@@ -1,8 +1,8 @@
  [{{SERVER}}{{SCRIPTPATH}}/api.php?action=rdfexport-owl&format=json&rdf_format=turtle&title={{FULLPAGENAME}} Export ontology as RDF]
 
-<div class="pagebot-button" data-config='{ "label": "Create Class", "reload": false, "params": {"categories": ["Category:OSW725a3cf5458f4daea86615fcbd0029f8"], "jsondata": {"ontologies": ["{{FULLPAGENAME}}"]}} }'></div>
-
-
+<div class="pagebot-button" data-config='{ "action": "create-subcategory", "label": "Create Class", "reload": true, "params": {"categories": ["Category:OSW379d5a1589c74c82bc0de47938264d00"], "jsondata": {"ontologies": ["{{FULLPAGENAME}}"]}} }'></div>
+<br>
+== Class Tree ==
 {{#tree: minExpandLevel=10 |
 {{#ask:
  [[:Category:OSW379d5a1589c74c82bc0de47938264d00]] OR [[IsPartOf::{{FULLPAGENAME}}]]
@@ -11,4 +11,13 @@
  |template=Viewer/LinkAndEditButton
  |link=none
 }}
+}}
+<br>
+== Class Graph ==
+{{#ask: 
+[[:Category:OSW379d5a1589c74c82bc0de47938264d00]] OR [[IsPartOf::{{FULLPAGENAME}}]]
+|?SubClassOf
+|format=graph
+|graphlink=yes
+|rankdir=BT
 }}

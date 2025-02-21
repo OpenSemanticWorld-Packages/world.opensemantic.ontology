@@ -4,7 +4,6 @@
         {
             "owl": "http://www.w3.org/2002/07/owl#",
             "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
             "iri": {
                 "@id": "@id"
             },
@@ -51,7 +50,7 @@
                 "@id": "rdfs:subPropertyOf",
                 "@type": "@id"
             },
-            "iri*": "Property:Equivalent_URI",
+            "imported_from*": "Property:Equivalent_URI",
             "restrictions": "rdfs:subClassOf",
             "restrictions*": "Property:HasRestriction",
             "on_property*": "Property:HasProperty",
@@ -64,6 +63,10 @@
             "min_cardinality": "owl:minCardinality",
             "cardinality": "owl:cardinality",
             "ontologies": {
+                "@id": "rdfs:isDefinedBy",
+                "@type": "@id"
+            },
+            "ontologies*": {
                 "@id": "Property:IsPartOf",
                 "@type": "@id"
             }
@@ -100,7 +103,15 @@
             "$comment": "OwlThing",
             "default": [
                 "Category:OSW379d5a1589c74c82bc0de47938264d00"
-            ]
+            ],
+            "items": {
+                "range": "Category:OSW725a3cf5458f4daea86615fcbd0029f8",
+                "options": {
+                    "autocomplete": {
+                        "query": "[[HasType::Category:OSW725a3cf5458f4daea86615fcbd0029f8]] OR [[HasType.SubClassOf::Category:OSW725a3cf5458f4daea86615fcbd0029f8]] OR [[HasType.SubClassOf.SubClassOf::Category:OSW725a3cf5458f4daea86615fcbd0029f8]] OR [[HasType.SubClassOf.SubClassOf.SubClassOf::Category:OSW725a3cf5458f4daea86615fcbd0029f8]] OR [[HasType.SubClassOf.SubClassOf.SubClassOf.SubClassOf::Category:OSW725a3cf5458f4daea86615fcbd0029f8]]"
+                    }
+                }
+            }
         },
         "ontologies": {
             "type": "array",
@@ -121,7 +132,10 @@
             "example": "schema:Person"
         },
         "restrictions": {
-            "title": "Relations",
+            "title": "Restrictions",
+            "title*": {
+                "en": "Relations"
+            },
             "description": "Relations of this class to other classes, instances or literals (OWL Restrictions)",
             "type": "array",
             "eval_template": [
@@ -133,7 +147,10 @@
             ],
             "items": {
                 "type": "object",
-                "title": "Relation",
+                "title": "Restriction",
+                "title*": {
+                    "en": "Relation"
+                },
                 "required": [
                     "uuid",
                     "rdf_type",

@@ -11,7 +11,7 @@
             "globalID": "world.opensemantic.ontology",
             "label": "OSW Ontology",
             "description": "Provides schemas for ontology terms",
-            "version": "0.6.0",
+            "version": "0.7.0",
             "requiredPackages": [
                 "world.opensemantic.core"
             ],

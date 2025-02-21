@@ -1,9 +1,0 @@
-<!-- set the imported form statement depending on the uri namespace -->
-{{#set:Imported from={{#switch: {{#replace: {{{uri|}}} | {{#explode:{{#explode:{{{uri|}}}|/|-1}}|#|-1}} |}}
-|http://emmo.info/emmo#=emmo
-|http://emmo.info/periodic-table#=periodictable
-|http://emmo.info/electrochemistry#=electrochemistry
-|http://emmo.info/battery#=battinfo
-|https://bvco.ontology.link/=bvco
-|https://gpo.ontology.link/=gpo
-}}:{{#explode:{{#explode:{{{uri|}}}|/|-1}}|#|-1}}}}

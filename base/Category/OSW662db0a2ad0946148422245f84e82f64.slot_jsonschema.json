@@ -2,6 +2,10 @@
     "@context": [
         "/wiki/Category:OSW288260cd0728420c9f40ae1c5fa19111?action=raw&slot=jsonschema",
         {
+            "iri": "@id",
+            "dc": "http://purl.org/dc/elements/1.1/",
+            "label": "dc:title",
+            "description": "dc:abstract",
             "see_also": "rdfs:seeAlso",
             "is_defined_by": "rdfs:isDefinedBy",
             "version_info": "owl:versionInfo",
