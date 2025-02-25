@@ -50,7 +50,8 @@
                 "@id": "rdfs:subPropertyOf",
                 "@type": "@id"
             },
-            "imported_from*": "Property:Equivalent_URI",
+            "iri*": "Property:Equivalent_URI",
+            "imported_from*": "Property:Imported_from",
             "restrictions": "rdfs:subClassOf",
             "restrictions*": "Property:HasRestriction",
             "on_property*": "Property:HasProperty",
