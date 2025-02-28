@@ -8,7 +8,7 @@
             "label": {
                 "@id": "skos:prefLabel"
             },
-            "altLabel": {
+            "alt_label": {
                 "@id": "skos:altLabel"
             },
             "source": "dc:source",
@@ -83,7 +83,7 @@
                 }
             }
         },
-        "altLabel": {
+        "alt_label": {
             "type": "array",
             "title": "Alternative label",
             "items": {
